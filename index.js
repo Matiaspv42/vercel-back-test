@@ -8,7 +8,7 @@ const app = express()
 const { registrarUsuario, verificarCredenciales, obtenerDatosDeUsuario, actualizadUsuario, registrarPost, obtenerPosts, registrarFavorito, obtenerFavoritos } = require("./consultas")
 const { checkCredentialsExists, tokenVerification } = require("./middlewares")
 
-app.listen(3000, console.log("SERVER ON"))
+app.listen(process.env.PORT, console.log("SERVER ON"))
 app.use(cors())
 app.use(express.json())
 

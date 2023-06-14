@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken")
-const { secretKey } = require("./secretkey")
+const secretKey = "Ultra Secret KEY"
 
 
 const checkCredentialsExists = (req, res, next) => {

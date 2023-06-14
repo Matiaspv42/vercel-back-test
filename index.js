@@ -1,7 +1,7 @@
 const express = require("express")
 const jwt = require("jsonwebtoken")
 
-const { secretKey } = require("./secretkey")
+const secretKey = "Ultra Secret KEY"
 const cors = require("cors")
 const app = express()
 
